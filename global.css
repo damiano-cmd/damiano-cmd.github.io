@@ -1,0 +1,164 @@
+* {
+	padding: 0;
+	margin: 0;
+
+	scrollbar-color: #eee #111;
+}
+
+*::-webkit-scrollbar {
+	width: 1rem;
+	background-color: #111;
+}
+
+*::-webkit-scrollbar-thumb {
+	background-color: #eee;
+	border-radius: .6rem;
+	border: .2rem solid #111;
+}
+
+html, body {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	color: #333;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: -apple-systrem, BlinkMacSystremFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+a {
+	color: rgb(0,100,200);
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:visited {
+	color: rgb(0,80,160);
+}
+
+label {
+	display: block;
+}
+
+input, button, select, textarea {
+	font-family: inherit;
+	font-size: inherit;
+	-webkit-padding: 0.4rem 0;
+	padding: 0.4rem;
+	margin: 0 0 0.5rem 0;
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+	border-radius: 2px;
+	outline: none;
+}
+
+input:disabled {
+	color: #888;
+}
+
+button {
+	color: #f4f4f4;
+	background-color: #444;
+	outline: none;
+}
+
+button:disabled {
+	color: #888;
+}
+
+button:not(:disabled):active {
+	background-color: #555;
+}
+
+h1 {
+	padding: 1rem 0;
+	font-size: 2.5rem;
+}
+p {
+	font-size: 1.2rem;
+}
+
+.navDrop {
+	z-index: 8;
+	
+	position: fixed;
+	top: 0;
+
+	width: 100%;
+	height: 64px;
+
+	background-color: #0a0a0a;
+}
+
+/* keyframe animationss */
+
+@keyframes inBottom {
+	from {
+		transform: translateY(2rem);
+		opacity: 0;
+	}
+	to {
+		transform: translateY(0px);
+		opacity: 1;
+	}
+}
+
+@keyframes inSideLeft {
+	from {
+		transform: translateX(-200px);
+		opacity: 0;
+	}
+	to {
+		transform: translateX(0px);
+		opacity: 1;
+	}
+}
+
+@keyframes inSideRight {
+	from {
+		transform: translateX(200px);
+		opacity: 0;
+	}
+	to {
+		transform: translateX(0px);
+		opacity: 1;
+	}
+}
+
+@keyframes inScale {
+	from {
+		transform: scale(0);
+		opacity: 0;
+	}
+	to {
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+
+@keyframes scaleUp {
+	from {
+		height: 0;
+	}
+	to {
+		height: 6rem;
+	}
+}
+
+@keyframes scaleUpSide {
+	from {
+		height: 0;
+		width: 500%;
+	}
+	to {
+		height: 8rem;
+		width: 100%;
+	}
+}
